@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
+    <FooterGuide/>
   </div>
 </template>
 
 <script>
+/*引入组件*/
+import FooterGuide from './components/FooterGuide/FooterGuide.vue'
 export default {
-  name: 'App'
+  name: "",
+  components:{
+    FooterGuide
+  }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+<style lang="stylus" rel="stylesheet/stylus" type="text/stylus">
+  .app
+    width 100%
+    height 100%
+    background #f5f5f5d
 </style>
